@@ -7,44 +7,28 @@ disable-model-invocation: true
 
 Create a checkpoint for a future session that will resume this work.
 
-The future session has access to project artifacts. It does not have access to this conversation.
+That session can read the project's artifacts but not this conversation. So capture what lives only in the conversation and would otherwise be lost. Record why things matter, not just what happened — and the state of the work, not the history of the conversation.
 
-Capture the context, reasoning, decisions, tradeoffs, assumptions, open questions, and current direction that would otherwise be lost.
+Treat artifacts as the source of truth; surround them with the context they can't carry on their own. Include the set of relevant files when that selection is itself state worth preserving.
 
-The goal is to allow the next session to continue the work without repeating important exploration.
-
-Record why things matter, not just what happened.
-
-Capture the state of the work, not the history of the conversation.
-
-Use the smallest structure that preserves continuity:
+Use whichever of these sections earn their place:
 
 ## Context
 
-Important framing, goals, constraints, priorities, assumptions, tradeoffs, intent, or discoveries that shape the work.
+Framing, goals, constraints, and assumptions that shape the work.
 
 ## Decisions
 
-Decisions made, why they were made, alternatives considered, alternatives rejected, and any reasoning that would be difficult to reconstruct later.
-
-Mark decisions as tentative when they are not yet settled.
+What was decided and why, alternatives rejected, and reasoning that would be hard to reconstruct later. Mark unsettled decisions tentative.
 
 ## Open Questions
 
-Known unknowns, unresolved decisions, risks, investigations in progress, or areas where confidence remains low.
+Unresolved decisions, risks, low-confidence areas, investigations in progress.
 
 ## Next Steps
 
-The most likely next actions, investigations, validations, or decision points.
+The most likely next actions or decision points.
 
-Reference artifacts as sources of truth and focus on the context that surrounds them.
+If arguments were provided, treat them as the next session's focus.
 
-Attach references to the decisions they support rather than collecting them separately.
-
-Include files when the set of files is itself important state that the next session would benefit from preserving.
-
-If arguments were provided, treat them as the next session's focus and prioritize information relevant to that work.
-
-Be concise, but preserve enough context that the next session can continue without redoing important thinking.
-
-Write the checkpoint to `"$(mktemp -d)/checkpoint-<slug>.md"`, where `<slug>` is a short descriptive kebab-case name fitting the subject. Then also print the full checkpoint inline.
+Write the checkpoint to `"$(mktemp -d)/checkpoint-<slug>.md"` (`<slug>` is a short kebab-case name fitting the subject), then print it inline.
