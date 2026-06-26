@@ -47,4 +47,4 @@ If arguments were provided, treat them as the next session's focus and prioritiz
 
 Be concise, but preserve enough context that the next session can continue without redoing important thinking.
 
-Write the checkpoint to a temp file via `mktemp -t checkpoint-XXXXXX.md` (read the file before writing), then also print the full checkpoint inline.
+Write the checkpoint to `"$(mktemp -d)/checkpoint-<slug>.md"`, where `<slug>` is a short descriptive kebab-case name fitting the subject. Then also print the full checkpoint inline.
