@@ -1,6 +1,5 @@
 ---
 name: researching
-description: Interview the user relentlessly about a plan or design. Use when the user wants to stress-test a plan before building, or uses any 'grill' trigger phrases.
 description: Research this plan relentlessly. Use when the user wants to understand a plan before building, or uses any 'research' trigger phrases.
 ---
 
