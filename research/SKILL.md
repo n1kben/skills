@@ -1,11 +1,12 @@
 ---
-name: researching
+name: research
 description: Research this plan relentlessly. Use when the user wants to understand a plan before building, or uses any 'research' trigger phrases.
+disable-model-invocation: true
 ---
 
 Research every aspect of this plan relentlessly until you reach a complete understanding.
 
-Walk down each branch of the design tree, resolving dependencies between decisions one-by-one.
+Walk down each branch of the design tree, surfacing unknown unknowns and resolving dependencies between decisions one-by-one.
 
 For each decision, determine the answer from the available evidence.
 
