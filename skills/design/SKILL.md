@@ -1,3 +1,9 @@
+---
+name: design
+description: Design before implementing.
+disable-model-invocation: true
+---
+
 # Designing
 
 Design before implementing.
@@ -9,3 +15,4 @@ Consult the relevant references as needed:
 - [API Design](API-DESIGN.md) — contracts, interfaces and capabilities.
 - [Vertical Slice Design](VERTICAL-SLICE-DESIGN.md) — incremental delivery through independently shippable slices.
 - [Implementation Design](IMPLEMENTATION-DESIGN.md) — preparatory refactoring, locality and implementation strategy.
+- [Test Design](TEST-DESIGN.md) — testability, test pyramid, test doubles, etc.
