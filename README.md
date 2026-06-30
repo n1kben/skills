@@ -12,8 +12,9 @@ cd ~/Developer/n1kben/skills
 make install
 ```
 
-`make install` symlinks this repo (wherever it lives) to `~/.claude/skills`.
-Run `make uninstall` to remove the link.
+`make install` symlinks this repo's `skills/` directory (wherever it lives) to
+`~/.claude/skills`, so only the skills themselves are exposed — not the README,
+Makefile, or other repo metadata. Run `make uninstall` to remove the link.
 
 Because it's a plain directory symlink, you can point other tools/agents at the
-same repo (e.g. `ln -sfn "$PWD" <other-tool>/skills`).
+same directory (e.g. `ln -sfn "$PWD/skills" <other-tool>/skills`).
