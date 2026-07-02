@@ -211,7 +211,7 @@ if [[ "$current_origin" != "$origin_url" ]]; then
   git -C "$checkout_path" remote set-url origin "$origin_url"
 fi
 
-last_fetch_file="$checkout_path/.git/librarian-last-fetch"
+last_fetch_file="$checkout_path/.git/git-repo-cache-last-fetch"
 now_epoch="$(date +%s)"
 needs_update=1
 

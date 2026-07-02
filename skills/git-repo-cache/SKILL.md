@@ -1,5 +1,5 @@
 ---
-name: librarian
+name: git-repo-cache
 description: Cache a remote git repository as a reusable local checkout so repeated reads reuse it instead of re-cloning. Trigger whenever a remote repo comes up as reference — the user pastes a GitHub/GitLab/Bitbucket URL, a `git@…` address, or `owner/repo` shorthand, or asks you to "look at", "check out", "clone", or "use as reference" a repo you don't have locally.
 ---
 

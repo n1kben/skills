@@ -1,5 +1,5 @@
 ---
-name: design
+name: designing
 description: Design before implementing.
 disable-model-invocation: true
 ---

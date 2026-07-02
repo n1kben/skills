@@ -1,5 +1,5 @@
 ---
-name: model
+name: modelling
 description: Model the problem before designing the solution.
 disable-model-invocation: true
 ---
